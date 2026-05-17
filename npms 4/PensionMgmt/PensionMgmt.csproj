@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
+
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PensionMgmt</RootNamespace>
+    <AssemblyName>PensionMgmt</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+	<Compile Include="Forms\ManageAccountPanel.cs" />
+	  <Compile Include="Forms\AuditLogPanel.cs" />
+	  <Compile Include="Forms\AuditLogger.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Data\DbAccess.cs" />
+    <Compile Include="Forms\DashboardPanel.cs" />
+    <Compile Include="Forms\EmployeesPanel.cs" />
+    <Compile Include="Forms\LoginForm.cs" />
+    <Compile Include="Forms\LoginForm.Designer.cs" />
+    <Compile Include="Forms\MainForm.cs" />
+    <Compile Include="Forms\MainForm.Designer.cs" />
+    <Compile Include="Forms\MyPayoutsPanel.cs" />
+    <Compile Include="Forms\PayoutsPanel.cs" />
+    <Compile Include="Forms\PensionCalcPanel.cs" />
+    <Compile Include="Forms\PensionHolderPanel.cs" />
+    <Compile Include="Forms\RegisterForm.cs" />
+    <Compile Include="Forms\RetirementPanel.cs" />
+    <Compile Include="Forms\UserControlPanel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Services\PensionCalculator.cs" />
+    <Compile Include="Session\CurrentUser.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Data\DatabaseSetup.sql" />
+  </ItemGroup>
+
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

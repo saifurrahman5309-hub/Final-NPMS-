@@ -1,0 +1,12 @@
+C:\Users\User\Downloads\PensionMgmt_Updatedxxxx\PensionMgmt\bin\Debug\PensionMgmt.exe
+C:\Users\User\Downloads\PensionMgmt_Updatedxxxx\PensionMgmt\bin\Debug\PensionMgmt.pdb
+C:\Users\User\Downloads\PensionMgmt_Updatedxxxx\PensionMgmt\obj\Debug\PensionMgmt.csproj.AssemblyReference.cache
+C:\Users\User\Downloads\PensionMgmt_Updatedxxxx\PensionMgmt\obj\Debug\PensionMgmt.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\PensionMgmt_Updatedxxxx\PensionMgmt\obj\Debug\PensionMgmt.exe
+C:\Users\User\Downloads\PensionMgmt_Updatedxxxx\PensionMgmt\obj\Debug\PensionMgmt.pdb
+E:\npms 2\PensionMgmt\bin\Debug\PensionMgmt.exe
+E:\npms 2\PensionMgmt\bin\Debug\PensionMgmt.pdb
+E:\npms 2\PensionMgmt\obj\Debug\PensionMgmt.csproj.AssemblyReference.cache
+E:\npms 2\PensionMgmt\obj\Debug\PensionMgmt.csproj.CoreCompileInputs.cache
+E:\npms 2\PensionMgmt\obj\Debug\PensionMgmt.exe
+E:\npms 2\PensionMgmt\obj\Debug\PensionMgmt.pdb
